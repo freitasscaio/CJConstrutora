@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header{
+    color: #fff;
+    padding: 1.6rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.ini nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.ini nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.ini nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.ini nav a:hover{
+    color: #e6e6e6;
+}
+
+#check, label[for="check"]{
+    display: none;
+}
+
+/* Destaque (Main) */
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(img/projeto.jpg);
+}
+
+.destCJ h1{
+    font-size: 3rem;
+    color: #ffee00;
+}
+
+.destCJ h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Seções */
+section{
+    padding: 80px 5%;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Sobre */
+.sobreCJ{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobreCJ h2{
+    text-align: left;
+}
+
+#destaqueSobre img{
+    width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#textoSobre p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+
+/* Serviços */
+.cards {
+    display: flex; 
+    justify-content: center; 
+    gap: 2rem; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.card {
+    background-color: #fff; 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(img/card-faixa.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1; 
+    max-width: 350px; 
+    min-width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #000000;
+}
